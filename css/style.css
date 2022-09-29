@@ -1,0 +1,347 @@
+body {
+  background-color: black;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-size: 46px;
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+}
+
+input {
+  font-family: "Oswald", sans-serif;
+}
+/*----------------------------HEADER----------------------------*/
+
+header {
+  background-color: black;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+header picture a img.logo {
+  padding: 10px;
+  height: 70px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header a:hover {
+  color: #e83382;
+  transition: 0.5s ease;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: #e83382 3px solid;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  background-color: black;
+}
+
+.menu li {
+  padding: 5px 10px;
+}
+
+/* MENU HAMBURGUESA */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  color: white;
+  user-select: none;
+}
+
+/*----------------------------MAIN----------------------------*/
+main {
+  background-color: white;
+}
+
+/*--------------------------INFO MODELO--------------------------*/
+
+section.informacion-modelo {
+  background: rgb(0,174,255);
+  background: linear-gradient(25deg, rgba(0,174,255,1) 0%, rgba(9,9,121,1) 43%, rgba(232,51,130,1) 86%);
+  color: white;
+}
+
+section.informacion-modelo h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+section.informacion-modelo p {
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+section.informacion-modelo p span {
+  font-weight: bolder;
+  margin-left: 20px;
+  font-size: larger;
+}
+
+section.informacion-modelo input {
+  border: 0px;
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+section.informacion-modelo input:hover {
+  background-color: black;
+  color: white;
+  transition: transform 1s ease;
+  transform: scale(1.1);
+}
+
+section.informacion-modelo img {
+  width: 100%;
+}
+
+section.modelos-container h2 {
+  margin: 8px;
+}
+section.modelos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+div.modelos-item {
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+div.modelos-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+div.modelos-item img:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+
+section.galeria-modelo img {
+  padding: 8px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+section.galeria-modelo img:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+
+section.galeria-modelo h2 {
+  margin: 8px;
+}
+/*----------------------MODELOS DESTACADOS----------------------*/
+section.lista-modelos h2 {
+  margin-left: 20px;
+}
+
+section.lista-modelos div.seleccion label {
+  font-family: "Oswald", sans-serif;
+}
+
+section.lista-modelos ol {
+  list-style-type: none;
+}
+
+section.lista-modelos ol div {
+  display: grid;
+  margin: 45px;
+  margin-top: 0px;
+}
+
+/*--------------------------FORMULARIO--------------------------*/
+form {
+  display: block;
+  justify-content: center;
+}
+
+form div input,
+select {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px;
+  margin-top: 0px;
+  width: 300px;
+}
+
+form div label input.aceptar-contacto {
+  width: 10px;
+}
+
+form p.aclaracion {
+  opacity: 50%;
+  margin: 0px;
+}
+
+form input.submit {
+  border: 0px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+form input.submit:hover {
+  border: 1px;
+  margin: 10px;
+  background-color: #e83382;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/*----------------------------FOOTER----------------------------*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+footer a:hover {
+  color: #e83382;
+}
+
+/*----------------------------MEDIA QUERIES----------------------------*/
+
+@media (max-width: 767) {
+  .d-block {
+    vertical-align: middle;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 10px;
+    z-index: 2;
+  }
+  .menu li:hover {
+    display: inline-block;
+    color: #e83382;
+    transition: 0.5s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  section.informacion-modelo h1 {
+    font-size: 32px;
+  }
+
+  section.informacion-modelo p {
+    font-size: 18px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .d-block {
+    vertical-align: middle;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 10px;
+    z-index: 2;
+  }
+  .menu li:hover {
+    display: inline-block;
+    color: #e83382;
+    transition: 0.5s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  section.informacion-modelo h1 {
+    font-size: 24px;
+  }
+
+  section.informacion-modelo p {
+    font-size: 18px;
+  }
+  section.informacion-modelo input {
+    border: 0px;
+    margin: 5px;
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
+  }
+}

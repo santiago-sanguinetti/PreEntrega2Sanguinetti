@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Inicio de la página -->
+    <a id="top"></a>
+    <!-- HEADER -->
+    <header>
+      <picture>
+        <a href="../index.html">
+          <img src="../img/horizon-logo.png" alt="Logo" class="logo" />
+        </a>
+      </picture>
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="nuevoModelo.html">Nuevo modelo</a>
+          </li>
+          <li>
+            <a href="modelos.html">Modelos</a>
+          </li>
+          <li>
+            <a href="festival.html">El Festival</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <h1>Formulario de contacto</h1>
+      <form>
+        <div>
+          <input type="text" placeholder="Nombre*" required />
+        </div>
+        <div>
+          <input type="text" placeholder="Apellido 1*" required />
+        </div>
+        <div>
+          <input type="text" placeholder="Apellido 2*" required />
+        </div>
+        <div>
+          <input type="email" placeholder="E-mail*" required />
+        </div>
+        <div>
+          <input type="text" placeholder="Teléfono*" required />
+        </div>
+        <div>
+          <select name="Motivo" required>
+            <option hidden disabled selected value>
+              -- Seleccionar motivo --
+            </option>
+            <option>Cotización</option>
+            <option>Probar un vehículo</option>
+            <option>Información de un modelo</option>
+            <option>Información del festival</option>
+            <option>Solicitud de oferta</option>
+            <option>Trabajar con nosotros</option>
+            <option>Inscribirme como piloto para el festival</option>
+          </select>
+        </div>
+        <div>
+          <label
+            ><input type="checkbox" required class="aceptar-contacto" />Acepto
+            que horizon me contacte*</label
+          >
+        </div>
+
+        <div>
+          <input type="submit" value="Enviar" class="submit" />
+          <p class="aclaracion">*Datos obligatorios</p>
+        </div>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <strong>
+          <p>© 2022 Horizon.</p>
+        </strong>
+      </div>
+
+      <div class="volver-arriba">
+        <a href="#top">Volver arriba</a>
+      </div>
+    </footer>
+  </body>
+</html>
