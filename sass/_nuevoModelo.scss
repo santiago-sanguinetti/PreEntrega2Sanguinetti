@@ -1,0 +1,75 @@
+@import "vars", "header", "footer";
+
+@mixin borde-secciones {
+  background: $secondary-color;
+  padding-bottom: 3px;
+}
+
+.botones {
+  margin: 0;
+  input {
+    background: black;
+    font-family: $title-font;
+    color: white;
+  }
+}
+
+.informacion-modelo {
+  .banner-image {
+    @include borde-secciones();
+  }
+  .texto {
+    margin: 2% 3% 0% 3%;
+    border-bottom: 3px solid $secondary-color;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: $title-font;
+
+  margin-bottom: 1%;
+}
+
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+
+  .galeria-item {
+    padding: 1%;
+  }
+  :hover {
+    transition: transform 1s;
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 640px) {
+  .texto-global {
+    text-align: left;
+    padding-left: 2%;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    @extend .texto-global;
+  }
+
+  .galeria-container {
+    padding: 0 2% 0 2%;
+  }
+  input {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .galeria-container {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}

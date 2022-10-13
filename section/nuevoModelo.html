@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descubre el último modelo ingresado en el concesionario de Horizon™.">
+    <meta name="keywords" content="Horizon, Modelo, Autos, Porsche, Taycan">
     <title>Nuevo modelo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -11,7 +13,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
       rel="stylesheet"
@@ -21,42 +23,54 @@
   <body>
     <!-- Inicio de la página -->
     <a id="top"></a>
-    <!-- HEADER -->
-    <header>
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <!-- LOGO -->
-        <picture>
-          <a href="../index.html">
-            <img src="../img/horizon-logo.png" alt="Logo" class="logo" />
-          </a>
-        </picture>
-
-        <ul>
-          <!-- MENU HAMBURGUESA -->
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">☰</label>
-          <!-- ENLACES -->
-          <div class="menu">
-            <li>
-              <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-              <a href="./nuevoModelo.html">Nuevo modelo</a>
-            </li>
-            <li>
-              <a href="./modelos.html">Modelos</a>
-            </li>
-            <li>
-              <a href="./festival.html">El Festival</a>
-            </li>
-            <li>
-              <a href="./contacto.html">Contacto</a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </header>
+        <!-- HEADER -->
+        <header>
+          <!-- NAVBAR -->
+          <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="../index.html">
+              <img
+                src="/img/horizon-logo.png"
+                width="30"
+                height="30"
+                class="d-inline-block align-top"
+                alt=""
+              />
+              Horizon
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link mr-sm-0" href="../index.html"
+                  >Inicio</a
+                >
+                <a
+                  class="nav-item nav-link active mr-sm-0"
+                  href="/section/nuevoModelo.html"
+                  >Nuevo Modelo<span class="sr-only"> (Actual)</span></a
+                >
+                <a class="nav-item nav-link mr-sm-0" href="/section/modelos.html"
+                  >Modelos</a
+                >
+                <a class="nav-item nav-link mr-sm-0" href="/section/festival.html"
+                  >Festival</a
+                >
+                <a class="nav-item nav-link mr-sm-0" href="/section/contacto.html"
+                  >Contacto</a
+                >
+              </div>
+            </div>
+          </nav>
+        </header>
 
     <!-- MAIN -->
     <main>
@@ -67,22 +81,38 @@
           alt="placeholder"
           class="banner-image"
         />
-        <h1>Porsche Taycan Turbo S</h1>
+        <div class="texto">
+          <h1>Porsche Taycan Turbo S</h1>
         <p>
           Purista, expresivo, atemporal: expresiones que impregnan formalmente el Taycan, resaltado además por la Flyline dinámica y plana. En cuanto al espacio, tampoco se queda atrás, ya que ofrece, además de los maleteros delantero y trasero, un confort exclusivo para 4 personas.
         </p>
-
-        <input type="button" value="Configurar" />
+        </div>
+        
+        <div class="botones">
+          <input type="button" value="Configurar" />
+        </div>
       </section>
-
-      <section class="galeria-modelo">
-        <h2>Galería</h2>
-        <img src="../img/taycan-turbo-s-2.png" alt="" />
-        <img src="../img/taycan-turbo-s-3.png" alt="" />
-        <img src="../img/taycan-turbo-s-4.png" alt="" />
-        <img src="../img/taycan-turbo-s-5.png" alt="" />
-        <img src="../img/taycan-turbo-s-6.png" alt="" />
-        <img src="../img/taycan-turbo-s-7.png" alt="" />
+      <h2>Galería</h2>
+      <section class="galeria-container">
+        
+        <div class="galeria-item">
+          <img src="../img/taycan-turbo-s-2.png" alt="Taycan lado" />
+        </div>
+        <div class="galeria-item">
+          <img src="../img/taycan-turbo-s-3.png" alt="Taycan frente" />
+        </div>
+        <div class="galeria-item">
+          <img src="../img/taycan-turbo-s-4.png" alt="Taycan cola" />
+        </div>
+        <div class="galeria-item">
+          <img src="../img/taycan-turbo-s-5.png" alt="Taycan trasera" />
+        </div>
+        <div class="galeria-item">
+          <img src="../img/taycan-turbo-s-6.png" alt="Taycan angulo" />
+        </div>
+        <div class="galeria-item">
+          <img src="../img/taycan-turbo-s-7.png" alt="Taycan freno" />
+        </div>
       </section>
     </main>
 
@@ -100,10 +130,20 @@
     </footer>
         <!-- Scripts de bootstrap -->
 
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"
-      ></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

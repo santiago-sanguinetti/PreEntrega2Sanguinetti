@@ -1,0 +1,93 @@
+@import 'vars', 'footer', 'header';
+
+body {
+  font-size: $mobile-font-size;
+
+
+  img {
+    max-width: 100%;
+  }
+
+  .modelo {
+    padding-top: 0.2rem;
+    background: rgb(0, 174, 255);
+    background: linear-gradient(
+      25deg,
+      rgba(0, 174, 255, 1) 2%,
+      rgba(9, 9, 121, 1) 43%,
+      rgba(232, 51, 130, 1) 96%
+    );
+    color: white;
+
+    // .informacion{
+
+    // }
+    // .imagen{
+
+    // }
+    .botones{
+      grid-template-columns: auto auto;
+
+    }
+  }
+
+  .modelos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+
+    .modelos-item {
+      float: left;
+      box-sizing: border-box;
+      padding: 1%;
+      font-size: 30px;
+      text-align: center;
+      justify-content: space-around;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        :hover {
+          transition: transform 1s;
+          transform: scale(1.1);}
+      }
+    }
+  }
+
+  @media (min-width: 320px){
+    h1{
+      font-size: $mobile-title-font-size;
+    }
+    p{
+      font-size: $mobile-font-size;
+    }
+    input{
+      font-size: $mobile-font-size;
+    }
+  }
+
+  @media (min-width: 640px){
+    h1{
+      font-size: $tablet-title-font-size;
+    }
+    p{
+      font-size: $tablet-font-size;
+    }
+  }
+
+  @media (min-width: 992px){
+    @mixin titulo{
+      font-family: $title-font;
+      font-size: $laptop-title-font-size;
+    }
+    h1, h2, h3{
+      @include titulo();
+    }
+    p{
+      font-size: $laptop-font-size;
+    }
+
+  }

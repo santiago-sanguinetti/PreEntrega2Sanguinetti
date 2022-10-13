@@ -1,0 +1,60 @@
+// @import "node_modules/bootstrap/scss/bootstrap";
+@import "vars", "index", "header", 'nuevoModelo';
+
+.navbar-dark {
+  background-color: black;
+}
+
+p {
+  font-family: $primary-font;
+}
+
+h1 {
+  font-family: $title-font;
+}
+
+.botones {
+  overflow: auto;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: stretch;
+  grid-template-columns: auto;
+
+}
+input {
+  border: 0;
+  margin: 1rem;
+  background-color: white;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+input[type=button]:hover {
+  background-color: black;
+  color: white;
+  transition: transform 1s ease;
+  transform: scale(1.1);
+}
+
+.formulario{
+    display: grid;
+    .campo{
+        display: flexbox;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+
+    input, select, textarea{
+        transform: none;
+        border: 2px solid black;
+        width: 70%;
+        }
+        
+    input[type=checkbox]{
+        width: auto;
+    }
+
+    p{
+        text-align: center;
+    }
+}

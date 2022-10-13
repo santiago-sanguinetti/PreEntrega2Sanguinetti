@@ -4,8 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Descubre los nuevos modelos del concesionario de Horizon™.">
+        <meta name="keywords" content="Horizon, Modelos, Autos">
         <title>Modelos</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../styles/style.css">
         <link 
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" 
         rel="stylesheet">
@@ -16,33 +24,52 @@
     <a id="top"></a>
     <!-- HEADER -->
     <header>
-        <picture>
-            <a href="../index.html">
-                <img src="../img/horizon-logo.png" alt="Logo" class="logo">
-            </a>
-        </picture>
-
         <!-- NAVBAR -->
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="nuevoModelo.html">Nuevo modelo</a>
-                </li>
-                <li>
-                    <a href="modelos.html">Modelos</a>
-                </li>
-                <li>
-                    <a href="festival.html">El Festival</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="../index.html">
+            <img
+                src="/img/horizon-logo.png"
+                width="30"
+                height="30"
+                class="d-inline-block align-top"
+                alt=""
+            />
+            Horizon
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link mr-sm-0" href="../index.html"
+                >Inicio</a
+                >
+                <a
+                class="nav-item nav-link mr-sm-0"
+                href="/section/nuevoModelo.html"
+                >Nuevo Modelo</span></a
+                >
+                <a class="nav-item nav-link active mr-sm-0" href="/section/modelos.html"
+                >Modelos<span class="sr-only"> (Actual)</a
+                >
+                <a class="nav-item nav-link mr-sm-0" href="/section/festival.html"
+                >Festival</a
+                >
+                <a class="nav-item nav-link mr-sm-0" href="/section/contacto.html"
+                >Contacto</a
+                >
+            </div>
+            </div>
         </nav>
-    </header>
+        </header>
 
     <!-- MAIN -->
     <main>
@@ -57,81 +84,93 @@
                 <label><input type="checkbox" name="Eléctricos">Eléctricos</label>
             </div>
 
-            <ol>
-
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo1
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+            <div class="galeria-container">
+                <div class="galeria-item">
+                        <p>
+                            BMW I8
+                        </p>
+                        <img src="../img/bmw-i8.png" alt="BMW i8">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo2
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        DODGE Charger SRT Hellcat
+                    </p>
+                    <img src="../img/dodge-srt.png" alt="Dodge Charger SRT">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo3
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        FORD Ranger Raptor
+                    </p>
+                    <img src="../img/ford-raptor.png" alt="Ford Ranger Raptor">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo4
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        PORSCHE Taycan Turbo S
+                    </p>
+                    <img src="../img/porsche-taycan.png" alt="Porsche Taycan Turbo S">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo5
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        INFINITI Q60 Concept
+                    </p>
+                    <img src="../img/infiniti-q60.png" alt="Infiniti Q60 Concept">
+                </div>
+    
+                <div class="galeria-item">
+                    <p>
+                        JAGUAR I-Pace
+                    </p>
+                    <img src="../img/jaguar-ipace.png" alt="Jaguar I-Pace">
+                </div>
+    
+                <div class="galeria-item">
+                    <p>
+                        JEEP Grand Cherokee Trackhawk
+                    </p>
+                    <img src="../img/jeep-cherokee.png" alt="Jeep Grand Cherokee Trackhawk">
+                </div>
+    
+                <div class="galeria-item">
+                    <p>
+                        KOENIGSEGG Regera
+                    </p>
+                    <img src="../img/koeni-regera.png" alt="Koenigsegg Regera">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo6
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        LAMBORGHINI Huracán
+                    </p>
+                    <img src="../img/lambo-huracan.png" alt="Lamborghini Huracán Performance">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo7
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        LYNK & CO 03+
+                    </p>
+                    <img src="../img/lynkco-03.png" alt="Lynk and CO 03">
                 </div>
 
-                <div>
-                    <li class="modelo">
-                        <h3>
-                            Modelo8
-                        </h3>
-                        <img src="../img/horizon-logo-magenta.png" alt="">
-                    </li>
+                <div class="galeria-item">
+                    <p>
+                        MCLAREN P1
+                    </p>
+                    <img src="../img/mclaren-p1.png" alt="McLaren P1">
                 </div>
 
-            </ol>
+<div class="galeria-item">
+    <p>
+        MERCEDES-AMG GT Coupé
+    </p>
+    <img src="../img/mercedes-gt.png" alt="Mercedes AMG GT Coupé">
+</div>
+    
+            </div>
+            
     </main>
     <!-- FOOTER -->
     <footer>
@@ -145,6 +184,24 @@
             <a href="#top">Volver arriba</a>
         </div>
     </footer>
+
+    <!-- Scripts de bootstrap -->
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </body>
 
 </html>
