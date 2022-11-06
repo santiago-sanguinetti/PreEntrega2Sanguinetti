@@ -1,75 +1,158 @@
-@import "vars", "header", "footer";
+@import "vars", "header", "footer", "colores", "llantas";
 
 @mixin borde-secciones {
-  background: $secondary-color;
-  padding-bottom: 3px;
+    background: $secondary-color;
+    padding-bottom: 3px;
 }
 
 .botones {
-  margin: 0;
-  input {
-    background: black;
-    font-family: $title-font;
-    color: white;
-  }
+    margin: 0;
+    input {
+        background: black;
+        font-family: $title-font;
+        color: white;
+    }
 }
 
 .informacion-modelo {
-  .banner-image {
-    @include borde-secciones();
-  }
-  .texto {
-    margin: 2% 3% 0% 3%;
-    border-bottom: 3px solid $secondary-color;
-  }
+    .banner-video {
+        @include borde-secciones();
+        width: 100%;
+    }
+    .texto {
+        margin: 2% 3% 0% 3%;
+        border-bottom: 3px solid $secondary-color;
+    }
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
-  font-family: $title-font;
+    text-align: center;
+    font-family: $title-font;
 
-  margin-bottom: 1%;
+    margin-bottom: 1%;
 }
 
 .galeria-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  overflow: hidden;
-  margin-bottom: 0.5rem;
+    display: grid;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    padding: 0 2% 0 2%;
 
-  .galeria-item {
-    padding: 1%;
-  }
-  :hover {
-    transition: transform 1s;
-    transform: scale(1.1);
-  }
+    .galeria-item {
+        padding: 1%;
+        :hover {
+            cursor: pointer;
+            color: $secondary-color;
+        }
+    }
+}
+
+.personalizacion {
+    width: 94%;
+    $margin-personalizacion: 3%;
+    margin-left: $margin-personalizacion;
+    margin-right: $margin-personalizacion;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+}
+.color:hover {
+    cursor: pointer;
+}
+.llanta {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    background-size: cover;
+}
+.llanta:hover {
+    cursor: pointer;
+}
+.seleccionado {
+    border: 2px solid $secondary-color;
+}
+
+.card-body > p {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    color: black;
+    font-family: $title-font;
+    font-size: $mobile-title-font-size;
+}
+.btn:first-child:hover {
+    color: $secondary-color;
+}
+.especificaciones {
+    padding: 0;
+    margin: 0 3% 0 3%;
+}
+.especificaciones > p > span {
+    display: block;
+    font-family: $title-font;
+}
+
+@media (min-width: 320px) {
+    .galeria-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
 
 @media (min-width: 640px) {
-  .texto-global {
-    text-align: left;
-    padding-left: 2%;
-  }
-  h1,
-  h2,
-  h3,
-  p {
-    @extend .texto-global;
-  }
+    .texto-global {
+        text-align: left;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    h1,
+    h2,
+    h3,
+    p {
+        @extend .texto-global;
+    }
 
-  .galeria-container {
-    padding: 0 2% 0 2%;
-  }
-  input {
-    font-size: 1.4rem;
-  }
+    input {
+        font-size: 1.4rem;
+    }
+    .color {
+        width: 60px;
+        height: 60px;
+    }
+    .llanta {
+        width: 75px;
+        height: 75px;
+    }
+    .btn {
+        font-size: $tablet-font-size;
+    }
+    .galeria-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
 }
 
 @media (min-width: 992px) {
-  .galeria-container {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  }
+    .llanta {
+        width: 100px;
+        height: 100px;
+    }
+    .btn {
+        font-size: $laptop-font-size;
+    }
+    .personalizacion {
+        display: inline-flex;
+    }
+    .personalizacion > .carrusel {
+        width: 100%;
+    }
+    #accordion {
+        padding-left: 2%;
+        width: 40%;
+    }
 }

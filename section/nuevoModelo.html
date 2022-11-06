@@ -1,149 +1,463 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Descubre el último modelo ingresado en el concesionario de Horizon™.">
-    <meta name="keywords" content="Horizon, Modelo, Autos, Porsche, Taycan">
-    <title>Nuevo modelo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Descubre el último modelo ingresado en el concesionario de Horizon™."
+        />
+        <meta
+            name="keywords"
+            content="Horizon, Modelo, Autos, Porsche, Taycan"
+        />
+        <title>Nuevo modelo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
 
-  <body>
-    <!-- Inicio de la página -->
-    <a id="top"></a>
+    <body>
+        <!-- Inicio de la página -->
+        <a id="top"></a>
         <!-- HEADER -->
         <header>
-          <!-- NAVBAR -->
-          <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <a class="navbar-brand mb-0 h1" href="../index.html">
-              <img
-                src="/img/horizon-logo.png"
-                width="30"
-                height="30"
-                class="d-inline-block align-top"
-                alt=""
-              />
-              Horizon
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link mr-sm-0" href="../index.html"
-                  >Inicio</a
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+                <a class="navbar-brand mb-0 h1" href="../index.html">
+                    <img
+                        src="/img/horizon-logo.png"
+                        width="30"
+                        height="30"
+                        class="d-inline-block align-top"
+                        alt=""
+                    />
+                    Horizon
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                <a
-                  class="nav-item nav-link active mr-sm-0"
-                  href="/section/nuevoModelo.html"
-                  >Nuevo Modelo<span class="sr-only"> (Actual)</span></a
-                >
-                <a class="nav-item nav-link mr-sm-0" href="/section/modelos.html"
-                  >Modelos</a
-                >
-                <a class="nav-item nav-link mr-sm-0" href="/section/festival.html"
-                  >Festival</a
-                >
-                <a class="nav-item nav-link mr-sm-0" href="/section/contacto.html"
-                  >Contacto</a
-                >
-              </div>
-            </div>
-          </nav>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a
+                            class="nav-item nav-link mr-sm-0"
+                            href="../index.html"
+                            >Inicio</a
+                        >
+                        <a
+                            class="nav-item nav-link active mr-sm-0"
+                            href="/section/nuevoModelo.html"
+                            >Nuevo Modelo<span class="sr-only">
+                                (Actual)</span
+                            ></a
+                        >
+                        <a
+                            class="nav-item nav-link mr-sm-0"
+                            href="/section/modelos.html"
+                            >Modelos</a
+                        >
+                        <a
+                            class="nav-item nav-link mr-sm-0"
+                            href="/section/festival.html"
+                            >Festival</a
+                        >
+                        <a
+                            class="nav-item nav-link mr-sm-0"
+                            href="/section/contacto.html"
+                            >Contacto</a
+                        >
+                    </div>
+                </div>
+            </nav>
         </header>
 
-    <!-- MAIN -->
-    <main>
-      <!-- BANNER -->
-      <section class="informacion-modelo">
-        <img
-          src="../img/taycan-turbo-s-1.png"
-          alt="placeholder"
-          class="banner-image"
-        />
-        <div class="texto">
-          <h1>Porsche Taycan Turbo S</h1>
-        <p>
-          Purista, expresivo, atemporal: expresiones que impregnan formalmente el Taycan, resaltado además por la Flyline dinámica y plana. En cuanto al espacio, tampoco se queda atrás, ya que ofrece, además de los maleteros delantero y trasero, un confort exclusivo para 4 personas.
-        </p>
-        </div>
-        
-        <div class="botones">
-          <input type="button" value="Configurar" />
-        </div>
-      </section>
-      <h2>Galería</h2>
-      <section class="galeria-container">
-        
-        <div class="galeria-item">
-          <img src="../img/taycan-turbo-s-2.png" alt="Taycan lado" />
-        </div>
-        <div class="galeria-item">
-          <img src="../img/taycan-turbo-s-3.png" alt="Taycan frente" />
-        </div>
-        <div class="galeria-item">
-          <img src="../img/taycan-turbo-s-4.png" alt="Taycan cola" />
-        </div>
-        <div class="galeria-item">
-          <img src="../img/taycan-turbo-s-5.png" alt="Taycan trasera" />
-        </div>
-        <div class="galeria-item">
-          <img src="../img/taycan-turbo-s-6.png" alt="Taycan angulo" />
-        </div>
-        <div class="galeria-item">
-          <img src="../img/taycan-turbo-s-7.png" alt="Taycan freno" />
-        </div>
-      </section>
-    </main>
+        <!-- MAIN -->
+        <main>
+            <!-- BANNER -->
+            <section class="informacion-modelo">
+                <div
+                    class="texto"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <h1>Porsche Taycan Turbo S</h1>
+                    <p>
+                        Purista, expresivo, atemporal: expresiones que impregnan
+                        formalmente el Taycan, resaltado además por la Flyline
+                        dinámica y plana. En cuanto al espacio, tampoco se queda
+                        atrás, ya que ofrece, además de los maleteros delantero
+                        y trasero, un confort exclusivo para 4 personas.
+                    </p>
+                </div>
+            </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div>
-        <strong>
-          <p>© 2022 Horizon.</p>
-        </strong>
-      </div>
+            <!-- PERSONALIZACION -->
+            <h2 class="personalizacion">Personalización</h2>
+            <section class="personalizacion">
+                <div class="carrusel">
+                    <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
+                        data-ride="carousel"
+                    >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    class="d-block w-100"
+                                    src="../img/taycan-config6.png"
+                                    alt="slide 1"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../img/taycan-config2.png"
+                                    alt="slide 2"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../img/taycan-config3.png"
+                                    alt="slide 3"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../img/taycan-config4.png"
+                                    alt="slide 4"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../img/taycan-config5.png"
+                                    alt="slide 5"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../img/taycan-config1.png"
+                                    alt="slide 6"
+                                />
+                            </div>
+                        </div>
+                        <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a
+                            class="carousel-control-next"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
 
-      <div class="volver-arriba">
-        <a href="#top">Volver arriba</a>
-      </div>
-    </footer>
+                <!-- menu configuracion -->
+                <div id="accordion">
+                    <div class="acordeon-container">
+                        <div class="acordeon-item" id="headingOne">
+                            <h5 class="mb-0 border-bottom">
+                                <button
+                                    class="btn btn-link container-fluid"
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    Color exterior
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div
+                            id="collapseOne"
+                            class="collapse show"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordion"
+                        >
+                            <div class="card-body">
+                                <p>Colores estándar</p>
+                                <div
+                                    class="color blanco-estandar seleccionado"
+                                ></div>
+                                <div class="color negro-estandar"></div>
+
+                                <p>Colores metálicos</p>
+                                <div class="color blanco-metalico"></div>
+                                <div class="color negro-metalico"></div>
+                                <div class="color gris-metalico"></div>
+                                <div class="color bordo-metalico"></div>
+                                <div class="color plata-metalico"></div>
+                                <div class="color magenta-palido"></div>
+                                <div class="color naranja-palido"></div>
+                                <div class="color azul-metalico"></div>
+                                <div class="color celeste-metalico"></div>
+                                <div class="color verde-metalico"></div>
+                                <div class="color marron-metalico"></div>
+
+                                <p>Colores clásicos</p>
+                                <div class="color azul-clasico"></div>
+                                <div class="color carmesi-clasico"></div>
+                                <div class="color gris-clasico"></div>
+                                <div class="color plata-satinado"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="" id="headingTwo">
+                            <h5 class="mb-0 border-bottom">
+                                <button
+                                    class="btn btn-link collapsed container-fluid"
+                                    data-toggle="collapse"
+                                    data-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Llantas
+                                </button>
+                            </h5>
+                        </div>
+                        <div
+                            id="collapseTwo"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-parent="#accordion"
+                        >
+                            <div class="card-body">
+                                <div class="llanta rim1"></div>
+                                <div class="llanta rim2"></div>
+                                <div class="llanta rim3"></div>
+                                <div class="llanta rim4 seleccionado"></div>
+                                <div class="llanta rim5"></div>
+                                <div class="llanta rim6"></div>
+                                <div class="llanta rim7"></div>
+                                <div class="llanta rim8"></div>
+                                <div class="llanta rim9"></div>
+                                <div class="llanta rim10"></div>
+                                <div class="llanta rim11"></div>
+                                <div class="llanta rim12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="" id="headingThree">
+                            <h5 class="mb-0 border-bottom">
+                                <button
+                                    class="btn btn-link collapsed container-fluid"
+                                    data-toggle="collapse"
+                                    data-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    Interiores
+                                </button>
+                            </h5>
+                        </div>
+                        <div
+                            id="collapseThree"
+                            class="collapse"
+                            aria-labelledby="headingThree"
+                            data-parent="#accordion"
+                        >
+                            <div class="card-body">
+                                <div class="color negro-negro"></div>
+                                <div
+                                    class="color negro-beige seleccionado"
+                                ></div>
+                                <div class="color azulmarino"></div>
+                                <div class="color negro-carmesi"></div>
+                                <div class="color negro-blanco"></div>
+                                <div class="color marron-dorado"></div>
+                                <div class="color negro-dorado"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <input type="button" value="Continuar configurando" />
+                    </div>
+                </div>
+            </section>
+
+            <section
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="especificaciones"
+            >
+                <h2>Especificaciones</h2>
+                <p>
+                    <span>2.8s</span>
+                    Aceleración 0-100km/h con Launch Control
+                </p>
+                <p>
+                    <span>761HP</span>
+
+                    Potencia máxima con Launch Control
+                </p>
+                <p>
+                    <span>260km/h</span>
+                    Velocidad máxima
+                </p>
+                <div class="botones">
+                    <input
+                        type="button"
+                        value="Ver todos los detalles técnicos"
+                    />
+                </div>
+            </section>
+
+            <h2>Galería</h2>
+            <section class="galeria-container">
+                <div class="galeria-item">
+                    <img src="../img/taycan-turbo-s-1.png" alt="" />
+                </div>
+                <div class="galeria-item">
+                    <img src="../img/taycan-turbo-s-2.png" alt="Taycan lado" />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-3.png"
+                        alt="Taycan frente"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img src="../img/taycan-turbo-s-4.png" alt="Taycan cola" />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-5.png"
+                        alt="Taycan trasera"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-6.png"
+                        alt="Taycan angulo"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img src="../img/taycan-turbo-s-7.png" alt="Taycan freno" />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-8.png"
+                        alt="Taycan puertas abiertas"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-9.png"
+                        alt="Taycan angulo"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-10.png"
+                        alt="Taycan cola atardecer"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img
+                        src="../img/taycan-turbo-s-11.png"
+                        alt="Taycan luz delantera"
+                    />
+                </div>
+                <div class="galeria-item">
+                    <img src="../img/taycan-turbo-s-12.png" alt="Taycan capó" />
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <p>© 2022 Horizon.</p>
+            </div>
+
+            <div class="links-footer">
+                <a href="#top">Volver arriba</a>
+                <a href="">Newsletter</a>
+                <a href="">Contacto</a>
+                <a href="">Aviso de privacidad</a>
+            </div>
+
+            <div class="iconos-footer">
+                <a href="https://www.facebook.com">
+                    <img src="/img/icon/facebook-icon.png" alt="" />
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="/img/icon/instagram-icon.png" alt="" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="/img/icon/twitter-icon.png" alt="" />
+                </a>
+                <a href="https://www.youtube.com">
+                    <img src="/img/icon/youtube-icon.png" alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/santiago-sanguinetti/">
+                    <img src="/img/icon/linkedin-icon.png" alt="" />
+                </a>
+            </div>
+        </footer>
         <!-- Scripts de bootstrap -->
 
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
-  </body>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>

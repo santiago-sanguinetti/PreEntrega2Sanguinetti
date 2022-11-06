@@ -1,13 +1,16 @@
 header {
-
     text-align: center;
     border-bottom: 2px;
     font-family: $title-font;
-
 }
-.navbar-dark{
+.navbar-dark {
     background-color: black;
 }
-.navbar-brand{
+.navbar-brand {
+    padding-left: 0.5rem;
     font-family: $title-font;
+}
+.bg-dark {
+    //No podía cambiarle el color al navbar sin el important
+    background-color: black !important;
 }

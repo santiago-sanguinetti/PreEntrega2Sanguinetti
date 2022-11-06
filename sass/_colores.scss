@@ -1,0 +1,99 @@
+//Estándar
+.blanco-estandar {
+    background-color: #efefef;
+}
+.negro-estandar {
+    background-color: #000000;
+}
+
+//Metálicos
+.blanco-metalico {
+    background-color: #eff5f9;
+}
+.negro-metalico {
+    background-color: #000000;
+}
+.gris-metalico {
+    background-color: #252625;
+}
+.bordo-metalico {
+    background-color: #5c111e;
+}
+.plata-metalico {
+    background-color: #c3cdd3;
+}
+.magenta-palido {
+    background-color: #8a7a82;
+}
+.naranja-palido {
+    background-color: #d1c8c0;
+}
+.azul-metalico {
+    background-color: #021a49;
+}
+.celeste-metalico {
+    background-color: #7da7bb;
+}
+.verde-metalico {
+    background-color: #45884c;
+}
+.marron-metalico {
+    background-color: #320001;
+}
+
+//Clásicos
+.azul-clasico {
+    background-color: #375f86;
+}
+.carmesi-clasico {
+    background-color: #960034;
+}
+.gris-clasico {
+    background-color: #c7c7bf;
+}
+.plata-satinado {
+    background-color: #dfe2e9;
+}
+
+//INTERIORES
+.negro-negro {
+    background-color: #000000;
+}
+.negro-beige {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(157, 150, 143, 1) 50%
+    );
+}
+.negro-carmesi {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(118, 46, 49, 1) 50%
+    );
+}
+.negro-dorado {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(226, 211, 188, 1) 50%
+    );
+}
+.negro-blanco {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(214, 215, 210, 1) 50%
+    );
+}
+.azulmarino {
+    background-color: #3a4047;
+}
+.marron-dorado {
+    background-color: #37261f;
+}
